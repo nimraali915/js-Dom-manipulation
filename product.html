@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manupliation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="display-3 text-center">Products</h1>
+        <div class="row">
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-6">                
+                <form>
+                    <!-- 1st artrib -->
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Please enter product id:</label>
+                        <input type="number" id="id" name="id" class="form-control">
+                
+                        <div class="invalid-feedback">
+                            Please enter a valid product id.
+                        </div>
+                    </div>
+                    <!-- 2nd artrib -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Please enter product name:</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product name.
+                        </div>
+                    </div>
+                    <!-- 3rd artrib -->
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Please enter product category:</label>
+                        <input type="text" id="category" name="category" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product category.
+                        </div>
+                    </div>
+                    <!-- 4th artrib -->
+                    <div class="mb-3">
+                        <label for="weight" class="form-label">Please enter product weight:</label>
+                        <input type="text" id="weight" name="weight" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product code.
+                        </div>
+                    </div>
+                    <!-- 5th artrib -->
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Please enter product price:</label>
+                        <input type="text" id="price" name="price" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product price.
+                        </div>
+                    </div>
+                    <!-- 6th artrib -->
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Please enter product brand:</label>
+                        <input type="text" id="brand" name="brand" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product brand.
+                        </div>
+                    </div>
+                    <!-- 7th artrib -->
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Please enter product quantity:</label>
+                        <input type="text" id="quantity" name="quantity" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid product quantity.
+                        </div>
+                    </div>
+                    <!-- 8th artrib -->
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Please enter product description:</label>
+                        <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a valid product description.
+                        </div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <input type="submit" value="Save" class="btn btn-success px-4 py-2 d-block mx-auto">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-3"></div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Weight</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Brand</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="product-table">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
